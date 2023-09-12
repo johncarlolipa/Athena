@@ -57,9 +57,9 @@ export default function Product() {
         ) : error ? (
           <p>Error: {error.message}</p>
         ) : (
-          <div className="grid grid-cols-1  md:grid-cols-4 mt-10 border border-black">
+          <div className="grid grid-cols-1  md:grid-cols-4 mt-10">
             {products.map((product, id) => (
-              <div key={id} className="border border-black">
+              <div key={id} className="">
                 <Featured product={product} />
               </div>
             ))}
