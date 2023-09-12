@@ -6,10 +6,13 @@ const NotFound = () => {
   const router = useRouter();
 
   useEffect(() => {
-    setTimeout(() => {
+    const redirectTimer = setTimeout(() => {
       router.push("/");
     }, 3000);
+
+    return () => clearTimeout(redirectTimer);
   }, [router]);
+
   return (
     <div className="not-found">
       <h1>Ooooopsss...</h1>

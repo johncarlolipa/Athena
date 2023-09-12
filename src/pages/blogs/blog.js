@@ -14,7 +14,7 @@ export const getStaticProps = async () => {
   } catch (error) {
     console.error("Error fetching posts:", error);
     return {
-      props: { posts: [] }, // Provide an empty array as a fallback
+      props: { posts: [] }, 
     };
   }
 };

@@ -49,9 +49,9 @@ const Details = ({ post }) => {
         <Image
           src={post.x_featured_media}
           alt={post.title.rendered}
-          width={800} // Set the appropriate width
-          height={600} // Set the appropriate height
-          layout="responsive" // Make the image responsive
+          width={800} 
+          height={600} 
+          layout="responsive" 
         />
       </div>
       <div className="text-center font-bold text-3xl">
