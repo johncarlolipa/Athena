@@ -1,4 +1,5 @@
 Next.js eCommerce Website with Headless CMS (WordPress API)
+<<<<<<< HEAD
 
 DDESCRIPTION
 
@@ -6,14 +7,23 @@ This is a Next.js-based eCommerce website that fetches data from a headless CMS 
 
 TECHNOLOGIES USED:
 
+=======
+Description
+This is a Next.js-based eCommerce website that fetches data from a headless CMS (WordPress) via its REST API. The website includes pages for the home, blog, and contact sections.
+
+Tech Stack
+>>>>>>> 7db6ee22a6349185126ab50496cddf6672b36734
 Next.js: A React framework for server-rendered React applications.
-Javascript: A programming language commonly used in web applications.
 Tailwind CSS: A utility-first CSS framework for building responsive web designs quickly.
 Node.js: A JavaScript runtime environment for building scalable and efficient server-side applications.
 React Icons: A library for using popular icon sets in React applications.
+<<<<<<< HEAD
 
 FEATURES
 
+=======
+Features
+>>>>>>> 7db6ee22a6349185126ab50496cddf6672b36734
 Home Page
 Product Sections: Display various product categories or featured products.
 Deal Sections: Highlight special deals or offers.
