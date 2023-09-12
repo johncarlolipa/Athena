@@ -1,5 +1,6 @@
 import React from "react";
 import parse from "html-react-parser";
+import Image from "next/image";
 
 export const getStaticPaths = async () => {
   const res = await fetch("http://headless.local/wp-json/wp/v2/posts");
@@ -29,14 +30,27 @@ export const getStaticProps = async (context) => {
 
 const Details = ({ post }) => {
   return (
-    <div>
-      <h1>
-        <h3>{post.title.rendered}</h3>
+    <section>
+      <div>
+        <Image
+          src={post.x_featured_media}
+          alt={post.title.rendered}
+          width={100}
+          height={100}
+          className="h-[50vh] w-full mx-auto mr-2"
+        />
+      </div>
+      <div className="text-center font-bold text-3xl">
+        <h1>{post.title.rendered}</h1>
+      </div>
+      <div className="flex justify-center space-x-40">
         <span>Author: {post.author}</span>
         <span>{new Date(post.date).toDateString()}</span>
-        <span>{parse(post.content.rendered)}</span>
-      </h1>
-    </div>
+      </div>
+      <div className="mt-10">
+        <p>{parse(post.content.rendered)}</p>
+      </div>
+    </section>
   );
 };
 
