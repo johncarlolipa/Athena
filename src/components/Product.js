@@ -31,15 +31,16 @@ export default function Product() {
 
     return () => (mounted = false);
   }, []);
+
   return (
     <div>
-      <div class="grid grid-cols-1 gap-4 md:grid-cols-3 mt-20">
-        <div class="md:col-span-2 p-4">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-3 mt-20">
+        <div className="md:col-span-2 p-4">
           <h1 className="text-black font-poppins text-6xl font-medium leading-normal">
             Featured Products
           </h1>
         </div>
-        <div class="md:col-span-1 p-4 flex justify-between items-center">
+        <div className="md:col-span-1 p-4 flex justify-between items-center">
           <span className="text-black font-poppins text-base font-normal leading-normal">
             New Product
           </span>

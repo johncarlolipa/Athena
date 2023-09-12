@@ -4,13 +4,13 @@ import Image from "next/image";
 export default function Featured({ product }) {
   return (
     <section>
-      <div class="">
-        <div class="p-4">
+      <div className="">
+        <div className="p-4">
           <Image
             src={product.x_featured_media}
             alt=""
             width={900}
-            height={0}
+            height={600} // Set an appropriate height for the image
             className="h-[50vh]"
           />
           <div className="text-center mt-5">

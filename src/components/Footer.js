@@ -12,7 +12,7 @@ export default function Footer() {
             alt=""
             width={150}
             height={100}
-            className=""
+            className="w-auto h-auto"
           />
 
           <div>
