@@ -1,4 +1,4 @@
-import Blogs from "@/sections/our-blog";
+import BlogList from "./BlogList";
 
 import { useState, useEffect } from "react";
 import {
@@ -56,7 +56,7 @@ export default function BlogPost() {
           <div className="grid grid-cols-1 gap-4 md:grid-cols-3 mt-10">
             {posts.map((post, id) => (
               <div key={id} className="border shadow-lg">
-                <Blogs post={post} />
+                <BlogList post={post} />
               </div>
             ))}
           </div>

@@ -1,10 +1,15 @@
 import React from 'react'
-import Footer from '@/components/Footer'
+import BlogHero from '@/components/blog/BlogHero'
+import BlogPost from '@/components/blog/BlogPost'
+import BlogNewsletter from '@/components/blog/BlogNewsletter'
+
 
 const blog = () => {
   return (
     <div>
-        wasssupppp
+        <BlogHero />
+        <BlogPost />
+        <BlogNewsletter />
     </div>
    
   )
