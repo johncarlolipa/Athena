@@ -4,7 +4,7 @@ import React from 'react'
 const contact = () => {
   return (
     <div className='text-3xl'>contact
-    <Footer/>
+
     </div>
   )
 }

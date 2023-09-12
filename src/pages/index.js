@@ -8,8 +8,7 @@ const montserrat = Montserrat({ subsets: ['latin'] })
 export default function Home() {
   return (
     <div className={`${montserrat.className}`}>
-      <Navbar />
-      <Footer/>
+      Heloo
     </div>
   )
 }

@@ -5,7 +5,6 @@ const blog = () => {
   return (
     <div>
         wasssupppp
-        <Footer />
     </div>
    
   )
