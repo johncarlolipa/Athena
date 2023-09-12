@@ -1,10 +1,12 @@
 import Image from "next/image";
-import { Montserrat } from "next/font/google";
-import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
 import Head from "next/head";
-
-const montserrat = Montserrat({ subsets: ["latin"] });
+import Hero from "@/components/home/BannerHero";
+import Category from "@/components/home/CategoryProduct";
+import Trend from "@/components/home/TrendProduct";
+import Deal from "@/components/home/DealBanner";
+import Featured from "@/components/home/FeaturedProducts";
+import BlogPost from "@/components/blog/BlogPost";
+import Quote from "@/components/home/Quote";
 
 export default function Home() {
   return (
@@ -12,6 +14,16 @@ export default function Home() {
       <Head>
         <title>Athena E-commerce</title>
       </Head>
+
+      <div>
+        <Hero />
+        <Category />
+        <Trend />
+        <Deal />
+        {/* <Featured /> */}
+        <BlogPost />
+        <Quote />
+      </div>
     </>
   );
 }

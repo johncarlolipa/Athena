@@ -3,18 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import parse from "html-react-parser";
 
-export default function BlogList ({ post }) {
+export default function BlogList({ post }) {
   return (
     <section className="">
-      {/* <div className="mt-20">
-        <h1 className="text-center  text-black font-poppins text-6xl font-medium leading-normal">
-          Our Blog
-        </h1>
-        <p className=" text-gray-400 text-center font-poppins text-base font-normal leading-normal tracking-wide mt-4">
-          Find a bright ideal to suit your taste with our great selection of
-          suspension, wall, floor and table lights.
-        </p>
-      </div> */}
       <div class="">
         <div class="p-4">
           <div>
