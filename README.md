@@ -1,38 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Next.js eCommerce Website with Headless CMS (WordPress API)
 
-## Getting Started
+Description
 
-First, run the development server:
+This is a Next.js-based eCommerce website that fetches data from a headless CMS (WordPress) via its REST API. The website includes pages for the home, blog, and contact sections.
 
-```bash
+Tech Stack
+
+Next.js: A React framework for server-rendered React applications.
+Javascript: A programming language commonly used in web applications.
+Tailwind CSS: A utility-first CSS framework for building responsive web designs quickly.
+Node.js: A JavaScript runtime environment for building scalable and efficient server-side applications.
+React Icons: A library for using popular icon sets in React applications.
+
+Features
+
+Home Page
+Product Sections: Display various product categories or featured products.
+Deal Sections: Highlight special deals or offers.
+Trend Product Sections: Showcase trending or recommended products.
+Blog Sections: Display blog posts or articles.
+Blog Page
+Blog Sections: List and display blog posts fetched from the WordPress CMS.
+Newsletter: Allow users to subscribe to the newsletter for updates.
+Contact Page
+Query Submission: Provide a form for users to leave queries or messages.
+Setup
+Clone the repository:
+
+bash
+Copy code
+git clone <repository_url>
+Navigate to the project directory:
+
+bash
+Copy code
+cd <project_directory>
+Install dependencies:
+
+bash
+Copy code
+npm install
+Configure WordPress API:
+
+Update the API endpoints and credentials in your project where you fetch data from the WordPress REST API.
+Start the development server:
+
+bash
+Copy code
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Open your browser and access the development server at http://localhost:3000.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Folder Structure
+/components: Contains React components used throughout the site.
+/pages: Contains Next.js page components for different sections (home, blog, contact).
+/styles: Contains Tailwind CSS stylesheets.
+/public: Contains static assets (images, fonts, etc.).
+Deployment
+You can deploy this website to platforms like Vercel, Netlify, or your preferred hosting service. Be sure to configure your deployment settings and environment variables accordingly.

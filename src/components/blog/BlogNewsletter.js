@@ -42,7 +42,7 @@ export default function BlogNewsletter() {
               className="block w-full px-4 py-2 border rounded border-black"
             />
           </form>
-          <button type="submit" className="border border-black px-4 py-2 mt-4">
+          <button type="submit" className=" border border-black text-white bg-black px-4 py-2 mt-4">
             Subscribe
           </button>
         </div>
