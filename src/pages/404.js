@@ -2,16 +2,16 @@ import Link from "next/link";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
 
-const NotFound = ({ children }) => {
+const NotFound = () => {
   const router = useRouter();
 
   useEffect(() => {
     setTimeout(() => {
       router.push("/");
-    }, 4000);
+    }, 3000);
   }, []);
   return (
-    <div className="container">
+    <div className="not-found">
       <h1>Ooooopsss...</h1>
       <h2>Page cannot be found.</h2>
       <p>

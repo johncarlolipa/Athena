@@ -12,9 +12,9 @@ const Navbar = () => {
           <Image
             src="../assets/athena-logo.svg"
             alt=""
-            width={150}
-            height={100}
-            className=""
+            width={0}
+            height={0}
+            className="w-auto h-auto"
           />
         </div>
         <div className="flex">

@@ -9,13 +9,6 @@ export default function Hero() {
           <div className="ml-32 mt-40 mb-40">
             <div className="text-black font-segoe-ui text-18 font-semibold leading-normal flex flex-col">
               <div className="flex items-center">
-                <Image
-                  src="/assets/Line-10.svg"
-                  alt=""
-                  width={4}
-                  height={0}
-                  className="h-[6vh] mr-2"
-                />
                 <div>Lighting</div>
               </div>
               <div className="ml-2 mt-0">2019</div>
