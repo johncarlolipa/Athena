@@ -25,7 +25,7 @@ export default function Category() {
           </h1>
           <span className="absolute top-20 text-lg left-10 z-10">4 items</span>
           <Image
-            src="/assets/women.jpg"
+            src="/assets/girl.jpg"
             alt=""
             width={900}
             height={0}
