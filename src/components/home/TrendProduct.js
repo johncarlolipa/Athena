@@ -36,13 +36,13 @@ export default function Trend() {
         <div className="grid grid-cols-1 gap-4 md:grid-cols-4 mt-10">
           <div className="text-center mt-5">
             <Image
-              src="/assets/item6.jpg"
+              src="/assets/item1.jpg"
               alt=""
               width={900}
               height={0}
               className="h-[60vh]"
             />
-            <h1 className="text-black font-poppins text-lg font-semibold">
+            <h1 className="text-black font-poppins text-lg font-semibold mt-2">
               Make it Happen
             </h1>
             <span className="text-gray-500 font-poppins text-md font-semibold">
@@ -50,75 +50,118 @@ export default function Trend() {
             </span>
           </div>
 
-          <div className="p-4">
+          <div className="text-center mt-5">
             <Image
-              src="/assets/item6.jpg"
+              src="/assets/item1.jpg"
               alt=""
               width={900}
               height={0}
               className="h-[60vh]"
             />
+            <h1 className="text-black font-poppins text-lg font-semibold mt-2">
+              Make it Happen
+            </h1>
+            <span className="text-gray-500 font-poppins text-md font-semibold">
+              P599
+            </span>
           </div>
 
-          <div className="p-4">
+          <div className="text-center mt-5">
             <Image
-              src="/assets/item7.jpg"
+              src="/assets/item1.jpg"
               alt=""
               width={900}
               height={0}
               className="h-[60vh]"
             />
+            <h1 className="text-black font-poppins text-lg font-semibold mt-2">
+              Make it Happen
+            </h1>
+            <span className="text-gray-500 font-poppins text-md font-semibold">
+              P599
+            </span>
           </div>
 
-          <div className="p-4">
+          <div className="text-center mt-5">
             <Image
-              src="/assets/item9.jpg"
+              src="/assets/item1.jpg"
               alt=""
               width={900}
               height={0}
               className="h-[60vh]"
             />
+            <h1 className="text-black font-poppins text-lg font-semibold mt-2">
+              Make it Happen
+            </h1>
+            <span className="text-gray-500 font-poppins text-md font-semibold">
+              P599
+            </span>
           </div>
 
-          <div className="p-4">
+          <div className="text-center mt-5">
             <Image
-              src="/assets/item4.jpg"
+              src="/assets/item1.jpg"
               alt=""
               width={900}
               height={0}
               className="h-[60vh]"
             />
+            <h1 className="text-black font-poppins text-lg font-semibold mt-2">
+              Make it Happen
+            </h1>
+            <span className="text-gray-500 font-poppins text-md font-semibold">
+              P599
+            </span>
           </div>
 
-          <div className="p-4">
+          <div className="text-center mt-5">
             <Image
-              src="/assets/item2.jpg"
+              src="/assets/item1.jpg"
               alt=""
               width={900}
               height={0}
               className="h-[60vh]"
             />
+            <h1 className="text-black font-poppins text-lg font-semibold mt-2">
+              Make it Happen
+            </h1>
+            <span className="text-gray-500 font-poppins text-md font-semibold">
+              P599
+            </span>
           </div>
 
-          <div className="p-4">
+          <div className="text-center mt-5">
             <Image
-              src="/assets/item5.jpg"
+              src="/assets/item1.jpg"
               alt=""
               width={900}
               height={0}
               className="h-[60vh]"
             />
+            <h1 className="text-black font-poppins text-lg font-semibold mt-2">
+              Make it Happen
+            </h1>
+            <span className="text-gray-500 font-poppins text-md font-semibold">
+              P599
+            </span>
           </div>
 
-          <div className="p-4">
+          <div className="text-center mt-5">
             <Image
-              src="/assets/item3.jpg"
+              src="/assets/item1.jpg"
               alt=""
               width={900}
               height={0}
               className="h-[60vh]"
             />
+            <h1 className="text-black font-poppins text-lg font-semibold mt-2">
+              Make it Happen
+            </h1>
+            <span className="text-gray-500 font-poppins text-md font-semibold">
+              P599
+            </span>
           </div>
+          
         </div>
       </Swiper>
 
