@@ -35,6 +35,13 @@ export default function Trend() {
       >
         <div className="grid grid-cols-1 gap-4 md:grid-cols-4 mt-10">
           <div className="text-center mt-5">
+            <Image
+              src="/assets/item6.jpg"
+              alt=""
+              width={900}
+              height={0}
+              className="h-[60vh]"
+            />
             <h1 className="text-black font-poppins text-lg font-semibold">
               Make it Happen
             </h1>
