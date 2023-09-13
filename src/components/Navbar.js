@@ -69,19 +69,19 @@ export default function Example() {
               <div className="hidden lg:relative lg:z-10 lg:ml-4 lg:flex lg:items-center space-x-2">
                 <button
                   type="button"
-                  className=" flex flex-shrink-0 rounded-full  p-1 text-gray-600 hover:text-black focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 space-x-4"
+                  className=" flex flex-shrink-0 rounded-full  p-1 text-black hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 space-x-4"
                 >
                   <BiSearch className="text-2xl" />
                 </button>
                 <button
                   type="button"
-                  className=" flex flex-shrink-0 rounded-full  p-1 text-gray-600 hover:text-black focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 space-x-4"
+                  className=" flex flex-shrink-0 rounded-full  p-1 text-black hover:text-gray-600focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 space-x-4"
                 >
                   <AiOutlineUser className="text-2xl" />
                 </button>
                 <button
                   type="button"
-                  className=" flex flex-shrink-0 rounded-full  p-1 text-gray-600 hover:text-black focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 space-x-4"
+                  className=" flex flex-shrink-0 rounded-full  p-1 text-black hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 space-x-4"
                 >
                   <AiOutlineShopping className="text-2xl" />
                 </button>
@@ -155,19 +155,19 @@ export default function Example() {
               <div className="flex items-center justify-end px-4 space-x-4">
                 <button
                   type="button"
-                  className=" flex flex-shrink-0 rounded-full  p-1 text-gray-600 hover:text-black focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 space-x-4"
+                  className=" flex flex-shrink-0 rounded-full  p-1 text-black hover:text-gray-600focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 space-x-4"
                 >
                   <BiSearch className="text-2xl" />
                 </button>
                 <button
                   type="button"
-                  className=" flex flex-shrink-0 rounded-full  p-1 text-gray-600 hover:text-black focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 space-x-4"
+                  className=" flex flex-shrink-0 rounded-full  p-1  text-black hover:text-gray-600focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 space-x-4"
                 >
                   <AiOutlineUser className="text-2xl" />
                 </button>
                 <button
                   type="button"
-                  className=" flex flex-shrink-0 rounded-full  p-1 text-gray-600 hover:text-black focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 space-x-4"
+                  className=" flex flex-shrink-0 rounded-full  p-1  text-black hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 space-x-4"
                 >
                   <AiOutlineShopping className="text-2xl" />
                 </button>
