@@ -25,9 +25,7 @@ const Blog = ({ posts }) => {
   return (
     <div>
       <BlogHero />
-
       <BlogPost />
-
       <BlogNewsletter />
     </div>
   );

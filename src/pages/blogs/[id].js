@@ -56,7 +56,7 @@ export const getStaticProps = async (context) => {
 
 const Details = ({ post }) => {
   return (
-    <section>
+    <section className="">
       <div>
         <Image
           src={post.x_featured_media}
@@ -66,10 +66,10 @@ const Details = ({ post }) => {
           className="h-[50vh] w-full mx-auto mr-2"
         />
       </div>
-      <div className="text-center font-bold text-3xl">
+      <div className="text-center font-bold text-5xl mt-4">
         <h1>{post.title.rendered}</h1>
       </div>
-      <div className="flex justify-center space-x-40">
+      <div className="flex justify-center space-x-40 mt-4">
         <span>Author: {post.author}</span>
         <span>{new Date(post.date).toDateString()}</span>
       </div>
