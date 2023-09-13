@@ -34,87 +34,84 @@ export default function Trend() {
         speed={700}
       >
         <div className="grid grid-cols-1 gap-4 md:grid-cols-4 mt-10">
-  
-            <div className="p-4">
-              <Image
-                src="/assets/item1.jpg"
-                alt=""
-                width={900}
-                height={0}
-                className="h-[60vh]"
-              />
-            </div>
+          <div className="text-center mt-5">
+            <h1 className="text-black font-poppins text-lg font-semibold">
+              Make it Happen
+            </h1>
+            <span className="text-gray-500 font-poppins text-md font-semibold">
+              P599
+            </span>
+          </div>
 
-            <div className="p-4">
-              <Image
-                src="/assets/item6.jpg"
-                alt=""
-                width={900}
-                height={0}
-                className="h-[60vh]"
-              />
-            </div>
+          <div className="p-4">
+            <Image
+              src="/assets/item6.jpg"
+              alt=""
+              width={900}
+              height={0}
+              className="h-[60vh]"
+            />
+          </div>
 
-            <div className="p-4">
-              <Image
-                src="/assets/item7.jpg"
-                alt=""
-                width={900}
-                height={0}
-                className="h-[60vh]"
-              />
-            </div>
+          <div className="p-4">
+            <Image
+              src="/assets/item7.jpg"
+              alt=""
+              width={900}
+              height={0}
+              className="h-[60vh]"
+            />
+          </div>
 
-            <div className="p-4">
-              <Image
-                src="/assets/item9.jpg"
-                alt=""
-                width={900}
-                height={0}
-                className="h-[60vh]"
-              />
-            </div>
+          <div className="p-4">
+            <Image
+              src="/assets/item9.jpg"
+              alt=""
+              width={900}
+              height={0}
+              className="h-[60vh]"
+            />
+          </div>
 
-            <div className="p-4">
-              <Image
-                src="/assets/item4.jpg"
-                alt=""
-                width={900}
-                height={0}
-                className="h-[60vh]"
-              />
-            </div>
+          <div className="p-4">
+            <Image
+              src="/assets/item4.jpg"
+              alt=""
+              width={900}
+              height={0}
+              className="h-[60vh]"
+            />
+          </div>
 
-            <div className="p-4">
-              <Image
-                src="/assets/item2.jpg"
-                alt=""
-                width={900}
-                height={0}
-                className="h-[60vh]"
-              />
-            </div>
+          <div className="p-4">
+            <Image
+              src="/assets/item2.jpg"
+              alt=""
+              width={900}
+              height={0}
+              className="h-[60vh]"
+            />
+          </div>
 
-            <div className="p-4">
-              <Image
-                src="/assets/item5.jpg"
-                alt=""
-                width={900}
-                height={0}
-                className="h-[60vh]"
-              />
-            </div>
+          <div className="p-4">
+            <Image
+              src="/assets/item5.jpg"
+              alt=""
+              width={900}
+              height={0}
+              className="h-[60vh]"
+            />
+          </div>
 
-            <div className="p-4">
-              <Image
-                src="/assets/item3.jpg"
-                alt=""
-                width={900}
-                height={0}
-                className="h-[60vh]"
-              />
-            </div>
-
+          <div className="p-4">
+            <Image
+              src="/assets/item3.jpg"
+              alt=""
+              width={900}
+              height={0}
+              className="h-[60vh]"
+            />
+          </div>
         </div>
       </Swiper>
 
