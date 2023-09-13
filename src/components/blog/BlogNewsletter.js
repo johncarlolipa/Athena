@@ -30,14 +30,12 @@ export default function BlogNewsletter() {
             <input
               type="text"
               name=""
-              value=""
               placeholder="Name"
               className="block w-full px-4 py-2 border rounded border-black"
             />
             <input
               type="email"
               name=""
-              value=""
               placeholder="Email Address"
               className="block w-full px-4 py-2 border rounded border-black"
             />

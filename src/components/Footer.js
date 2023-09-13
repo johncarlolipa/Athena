@@ -5,8 +5,8 @@ import { FiTwitter, FiInstagram, FiFacebook } from "react-icons/fi";
 export default function Footer() {
   return (
     <section>
-      <div class="grid grid-cols-2 xl:grid-cols-4 mt-10 ml-20">
-        <div class="p-4 space-y-4">
+      <div className="grid grid-cols-2 xl:grid-cols-4 mt-10 ml-20">
+        <div className="p-4 space-y-4">
           <Image
             src="../assets/athena-logo.svg"
             alt=""
@@ -27,7 +27,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div class="p-4 space-y-8">
+        <div className="p-4 space-y-8">
           <div className="font-bold text-xl">Help & Information</div>
           <ul className="">
             <li className="mt-4">
@@ -48,7 +48,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        <div class="p-4 space-y-8">
+        <div className="p-4 space-y-8">
           <span className="font-bold text-xl">About Us</span>
           <ul className="">
             <li className="mt-4">
@@ -69,7 +69,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        <div class="p-4 space-y-8">
+        <div className="p-4 space-y-8">
           <span className="font-bold | text-xl">Categories</span>
           <ul className="">
             <li className="mt-4">

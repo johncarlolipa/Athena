@@ -26,25 +26,22 @@ const contact = () => {
           <form className="mt-5 space-y-4">
             <div className="space-x-4">
               <input
-                type=""
-                name=""
-                value=""
+                type="text"
+                name="text"
                 placeholder="Name"
                 className="p-4 border border-black"
               />
               <input
-                type=""
-                name=""
-                value=""
+                type="text"
+                name="text"
                 placeholder="Lastname"
                 className="p-4 border border-black"
               />
             </div>
             <div className="grid space-y-4">
               <input
-                type=""
-                name=""
-                value=""
+                type="email"
+                name="email"
                 placeholder="Email Address"
                 className="p-4 border border-black"
               />

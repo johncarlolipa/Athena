@@ -33,9 +33,9 @@ export default function Trend() {
         onSlideChange={() => console.log("slide change")}
         speed={700}
       >
-        <div class="grid grid-cols-1 gap-4 md:grid-cols-4 mt-10">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-4 mt-10">
           <SwiperSlide>
-            <div class="p-4">
+            <div className="p-4">
               <Image
                 src="/assets/item1.jpg"
                 alt=""
@@ -46,7 +46,7 @@ export default function Trend() {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div class="p-4">
+            <div className="p-4">
               <Image
                 src="/assets/item6.jpg"
                 alt=""
@@ -57,7 +57,7 @@ export default function Trend() {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div class="p-4">
+            <div className="p-4">
               <Image
                 src="/assets/item7.jpg"
                 alt=""
@@ -68,7 +68,7 @@ export default function Trend() {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div class="p-4">
+            <div className="p-4">
               <Image
                 src="/assets/item9.jpg"
                 alt=""
@@ -79,7 +79,7 @@ export default function Trend() {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div class="p-4">
+            <div className="p-4">
               <Image
                 src="/assets/item4.jpg"
                 alt=""
@@ -90,7 +90,7 @@ export default function Trend() {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div class="p-4">
+            <div className="p-4">
               <Image
                 src="/assets/item2.jpg"
                 alt=""
@@ -101,7 +101,7 @@ export default function Trend() {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div class="p-4">
+            <div className="p-4">
               <Image
                 src="/assets/item5.jpg"
                 alt=""
@@ -112,7 +112,7 @@ export default function Trend() {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div class="p-4">
+            <div className="p-4">
               <Image
                 src="/assets/item3.jpg"
                 alt=""

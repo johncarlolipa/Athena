@@ -4,8 +4,8 @@ import Image from "next/image";
 export default function Deal() {
   return (
     <section>
-      <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
-        <div class="">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+        <div className="">
           <Image
             src="/assets/women.jpg"
             alt=""
@@ -14,7 +14,7 @@ export default function Deal() {
             className="h-[100vh]"
           />
         </div>
-        <div class="p-4">
+        <div className="p-4">
           <div className="flex justify-center text-black font-poppins text-6xl font-medium leading-normal mt-32">
             Deals of the Day
           </div>
