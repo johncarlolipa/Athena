@@ -3,29 +3,51 @@ import parse from "html-react-parser";
 import Image from "next/image";
 
 export const getStaticPaths = async () => {
-  const res = await fetch("http://headless.local/wp-json/wp/v2/posts");
-  const data = await res.json();
+  try {
+    const res = await fetch("http://headless.local/wp-json/wp/v2/posts");
+    if (!res.ok) {
+      throw new Error("Failed to fetch data");
+    }
+    const data = await res.json();
 
-  const paths = data.map((post) => {
+    const paths = data.map((post) => {
+      return {
+        params: { id: post.id.toString() },
+      };
+    });
+
     return {
-      params: { id: post.id.toString() },
+      paths,
+      fallback: false,
     };
-  });
-
-  return {
-    paths,
-    fallback: false,
-  };
+  } catch (error) {
+    console.error("Error fetching paths:", error);
+    return {
+      paths: [],
+      fallback: false,
+    };
+  }
 };
 
 export const getStaticProps = async (context) => {
   const id = context.params.id;
-  const res = await fetch(`http://headless.local/wp-json/wp/v2/posts/${id}`);
-  const post = await res.json();
 
-  return {
-    props: { post },
-  };
+  try {
+    const res = await fetch(`http://headless.local/wp-json/wp/v2/posts/${id}`);
+    if (!res.ok) {
+      throw new Error("Failed to fetch post data");
+    }
+    const post = await res.json();
+
+    return {
+      props: { post },
+    };
+  } catch (error) {
+    console.error("Error fetching post:", error);
+    return {
+      props: { post: null }, // Provide a default value or handle the error gracefully
+    };
+  }
 };
 
 const Details = ({ post }) => {
