@@ -84,7 +84,7 @@ export default function Example() {
             <div key={item.name} className="pb-6">
               <a
                 href={item.href}
-                className="text-sm leading-6 text-gray-300 hover:text-gray-900"
+                className="text-sm leading-6 text-gray-300 hover:text-white"
               >
                 {item.name}
               </a>
