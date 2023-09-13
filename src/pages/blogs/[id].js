@@ -6,9 +6,9 @@ export const getStaticPaths = async () => {
   const res = await fetch("http://headless.local/wp-json/wp/v2/posts");
   const data = await res.json();
 
-  const paths = data.map((blog) => {
+  const paths = data.map((post) => {
     return {
-      params: { id: blog.id.toString() },
+      params: { id: post.id.toString() },
     };
   });
 

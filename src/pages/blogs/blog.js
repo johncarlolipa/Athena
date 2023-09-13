@@ -2,6 +2,7 @@ import React from "react";
 import BlogHero from "@/components/blog/BlogHero";
 import BlogList from "@/components/blog/BlogList";
 import BlogNewsletter from "@/components/blog/BlogNewsletter";
+import Link from "next/link";
 
 export const getStaticProps = async () => {
   try {
@@ -9,7 +10,7 @@ export const getStaticProps = async () => {
     const data = await res.json();
 
     return {
-      props: { posts: data },
+      props: { blogs: data },
     };
   } catch (error) {
     console.error("Error fetching posts:", error);
@@ -19,7 +20,7 @@ export const getStaticProps = async () => {
   }
 };
 
-const Blog = ({ posts }) => {
+const Blog = ({ blogs }) => {
   return (
     <div>
       <BlogHero />
@@ -33,7 +34,7 @@ const Blog = ({ posts }) => {
         </div>
       </div>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-3 mt-10">
-        {posts.map((post) => (
+        {blogs.map((post) => (
           <div key={post.id}>
             <BlogList post={post} />
           </div>
