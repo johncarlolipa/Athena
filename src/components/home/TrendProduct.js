@@ -45,7 +45,7 @@ export default function Trend() {
             <h1 className="text-black font-poppins text-lg font-semibold mt-2">
               Make it Happen
             </h1>
-            <span className="text-gray-500 font-poppins text-md font-semibold">
+            <span className="text-gray-600 font-poppins text-md font-semibold">
               P599
             </span>
           </div>
@@ -161,7 +161,7 @@ export default function Trend() {
               P599
             </span>
           </div>
-          
+
         </div>
       </Swiper>
 
