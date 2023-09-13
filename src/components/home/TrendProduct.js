@@ -34,7 +34,7 @@ export default function Trend() {
         speed={700}
       >
         <div className="grid grid-cols-1 gap-4 md:grid-cols-4 mt-10">
-          <SwiperSlide>
+  
             <div className="p-4">
               <Image
                 src="/assets/item1.jpg"
@@ -44,8 +44,7 @@ export default function Trend() {
                 className="h-[60vh]"
               />
             </div>
-          </SwiperSlide>
-          <SwiperSlide>
+
             <div className="p-4">
               <Image
                 src="/assets/item6.jpg"
@@ -55,8 +54,7 @@ export default function Trend() {
                 className="h-[60vh]"
               />
             </div>
-          </SwiperSlide>
-          <SwiperSlide>
+
             <div className="p-4">
               <Image
                 src="/assets/item7.jpg"
@@ -66,8 +64,7 @@ export default function Trend() {
                 className="h-[60vh]"
               />
             </div>
-          </SwiperSlide>
-          <SwiperSlide>
+
             <div className="p-4">
               <Image
                 src="/assets/item9.jpg"
@@ -77,8 +74,7 @@ export default function Trend() {
                 className="h-[60vh]"
               />
             </div>
-          </SwiperSlide>
-          <SwiperSlide>
+
             <div className="p-4">
               <Image
                 src="/assets/item4.jpg"
@@ -88,8 +84,7 @@ export default function Trend() {
                 className="h-[60vh]"
               />
             </div>
-          </SwiperSlide>
-          <SwiperSlide>
+
             <div className="p-4">
               <Image
                 src="/assets/item2.jpg"
@@ -99,8 +94,7 @@ export default function Trend() {
                 className="h-[60vh]"
               />
             </div>
-          </SwiperSlide>
-          <SwiperSlide>
+
             <div className="p-4">
               <Image
                 src="/assets/item5.jpg"
@@ -110,8 +104,7 @@ export default function Trend() {
                 className="h-[60vh]"
               />
             </div>
-          </SwiperSlide>
-          <SwiperSlide>
+
             <div className="p-4">
               <Image
                 src="/assets/item3.jpg"
@@ -121,7 +114,7 @@ export default function Trend() {
                 className="h-[60vh]"
               />
             </div>
-          </SwiperSlide>
+
         </div>
       </Swiper>
 
