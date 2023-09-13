@@ -6,9 +6,9 @@ export const getStaticPaths = async () => {
   const res = await fetch("http://headless.local/wp-json/wp/v2/posts");
   const data = await res.json();
 
-  const paths = data.map((post) => {
+  const paths = data.map((blog) => {
     return {
-      params: { id: post.id.toString() },
+      params: { id: blog.id.toString() },
     };
   });
 
@@ -20,7 +20,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async (context) => {
   const id = context.params.id;
-  const res = await fetch(`http://headless.local/wp-json/wp/v2/posts/${id}`); 
+  const res = await fetch(`http://headless.local/wp-json/wp/v2/posts/${id}`);
   const post = await res.json();
 
   return {
