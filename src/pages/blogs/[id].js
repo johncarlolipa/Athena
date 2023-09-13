@@ -4,7 +4,9 @@ import Image from "next/image";
 
 export const getStaticPaths = async () => {
   try {
-    const res = await fetch("http://headless.local/wp-json/wp/v2/posts");
+    const res = await fetch(
+      "https://dev-headlesscmsworpress.pantheonsite.io/wp-json/wp/v2/posts"
+    );
     if (!res.ok) {
       throw new Error("Failed to fetch data");
     }
@@ -33,7 +35,9 @@ export const getStaticProps = async (context) => {
   const id = context.params.id;
 
   try {
-    const res = await fetch(`http://headless.local/wp-json/wp/v2/posts/${id}`);
+    const res = await fetch(
+      `https://dev-headlesscmsworpress.pantheonsite.io/wp-json/wp/v2/posts/${id}`
+    );
     if (!res.ok) {
       throw new Error("Failed to fetch post data");
     }
@@ -45,7 +49,7 @@ export const getStaticProps = async (context) => {
   } catch (error) {
     console.error("Error fetching post:", error);
     return {
-      props: { post: null }, // Provide a default value or handle the error gracefully
+      props: { post: null },
     };
   }
 };

@@ -3,7 +3,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["headless.local"],
+    domains: ["dev-headlesscmsworpress.pantheonsite.io"],
   },
 };
 

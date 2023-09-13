@@ -14,6 +14,7 @@ export default function Product() {
     const fetchData = async () => {
       try {
         const productsFromServer = await getAllProductsFromServer();
+        console.log(productsFromServer)
 
         if (mounted) {
           setProducts(productsFromServer);

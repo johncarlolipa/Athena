@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export const getStaticProps = async () => {
   try {
-    const res = await fetch("http://headless.local/wp-json/wp/v2/posts");
+    const res = await fetch("https://headless.local/wp-json/wp/v2/posts");
     const data = await res.json();
 
     return {
