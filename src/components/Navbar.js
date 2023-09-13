@@ -57,7 +57,7 @@ export default function Example() {
               </div>
               <div className="relative z-10 flex items-center lg:hidden">
                 {/* Mobile menu button */}
-                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-black hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-black hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open menu</span>
                   {open ? (
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
@@ -75,7 +75,7 @@ export default function Example() {
                 </button>
                 <button
                   type="button"
-                  className=" flex flex-shrink-0 rounded-full  p-1 text-black hover:text-gray-600focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 space-x-4"
+                  className=" flex flex-shrink-0 rounded-full  p-1 text-black hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 space-x-4"
                 >
                   <AiOutlineUser className="text-2xl" />
                 </button>
@@ -155,13 +155,13 @@ export default function Example() {
               <div className="flex items-center justify-end px-4 space-x-4">
                 <button
                   type="button"
-                  className=" flex flex-shrink-0 rounded-full  p-1 text-black hover:text-gray-600focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 space-x-4"
+                  className=" flex flex-shrink-0 rounded-full  p-1 text-black hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 space-x-4"
                 >
                   <BiSearch className="text-2xl" />
                 </button>
                 <button
                   type="button"
-                  className=" flex flex-shrink-0 rounded-full  p-1  text-black hover:text-gray-600focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 space-x-4"
+                  className=" flex flex-shrink-0 rounded-full  p-1  text-black hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 space-x-4"
                 >
                   <AiOutlineUser className="text-2xl" />
                 </button>
