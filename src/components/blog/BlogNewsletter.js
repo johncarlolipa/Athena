@@ -5,7 +5,7 @@ export default function BlogNewsletter() {
   return (
     <section>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 mt-20">
-        <div className="grid-item bg-red-200">
+        <div className="grid-item">
           <Image
             src="/assets/blog9.jpg"
             alt=""
@@ -40,7 +40,10 @@ export default function BlogNewsletter() {
               className="block w-full px-4 py-2 border rounded border-black"
             />
           </form>
-          <button type="submit" className=" border border-black text-white bg-black px-4 py-2 mt-4">
+          <button
+            type="submit"
+            className=" border border-black text-white bg-black px-4 py-2 mt-4"
+          >
             Subscribe
           </button>
         </div>

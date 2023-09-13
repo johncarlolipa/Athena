@@ -5,8 +5,8 @@ import Image from "next/image";
 const contact = () => {
   return (
     <div className="">
-      <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
-        <div class="">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+        <div className="">
           <Image
             src="/assets/women.jpg"
             alt=""
@@ -15,7 +15,7 @@ const contact = () => {
             className="h-[100vh]"
           />
         </div>
-        <div class="p-4 mt-6">
+        <div className="p-4 mt-6">
           <div>
             <h1 className="text-4xl font-bold">Get in touch</h1>
             <p className="text-lg font-semibold text-gray-600 mt-5">
