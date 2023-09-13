@@ -70,7 +70,7 @@ const Details = ({ post }) => {
         <span>{new Date(post.date).toDateString()}</span>
       </div>
       <div className="mt-10">
-        <p>{parse(post.content.rendered)}</p>
+        <div>{parse(post.content.rendered)}</div>
       </div>
     </section>
   );
