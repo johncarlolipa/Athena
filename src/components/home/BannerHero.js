@@ -25,7 +25,7 @@ export default function Hero() {
                 </span>
               </p>
             </div>
-            <button type="shop" className="border border-black py-2 px-4 mt-10">
+            <button type="shop" className="border border-black py-2 px-4 mt-10 hover:bg-black hover:text-white">
               Shop Now
             </button>
           </div>
