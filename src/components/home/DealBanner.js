@@ -61,7 +61,7 @@ export default function Deal() {
             </span>
           </div>
           <div className="text-center mt-10">
-            <button type="submit" className="py-2 px-4 border border-black">
+            <button type="submit" className="py-2 px-4 border border-black hover:text-white hover:bg-black">
               Shop Now
             </button>
           </div>
