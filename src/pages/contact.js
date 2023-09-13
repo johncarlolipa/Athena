@@ -20,7 +20,7 @@ import {
 
 export default function Contact() {
   return (
-    <div className="relative isolate bg-gray-900">
+    <div className="relative isolate bg-black">
       <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
         <div className="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
           <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
@@ -72,9 +72,9 @@ export default function Contact() {
               Get in touch
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-              Proin volutpat consequat porttitor cras nullam gravida at. Orci
-              molestie a eu arcu. Sed ut tincidunt integer elementum id sem.
-              Arcu sed malesuada et magna.
+              Do you have any queries about the products you want tp buy or have
+              been received? Just kingly send us a message and we will get back
+              to you as soon as possible.
             </p>
             <dl className="mt-10 space-y-4 text-base leading-7 text-gray-300">
               <div className="flex gap-x-4">
@@ -118,7 +118,7 @@ export default function Contact() {
                     className="hover:text-white"
                     href="mailto:hello@example.com"
                   >
-                    hello@example.com
+                    athena@example.com
                   </a>
                 </dd>
               </div>
@@ -221,7 +221,7 @@ export default function Contact() {
             <div className="mt-8 flex justify-end">
               <button
                 type="submit"
-                className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                className="rounded-md bg-white px-3.5 py-2.5 text-center text-sm font-semibold text-black shadow-sm hover:bg-gray-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
               >
                 Send message
               </button>
