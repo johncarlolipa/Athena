@@ -11,11 +11,11 @@ export default function Hero() {
               <div className="flex items-center">
                 <div>Lighting</div>
               </div>
-              <div className="ml-2 mt-0">2019</div>
+              <div className="mt-0">2023</div>
             </div>
 
-            <div className="text-black font-poppins text-8xl font-semibold leading-normal">
-              ETNA
+            <div className="text-black font-poppins text-6xl font-semibold leading-normal">
+              ATHENA
             </div>
             <div>
               <p className="text-gray-500 font-poppins text-sm font-normal leading-normal">
