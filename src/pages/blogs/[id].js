@@ -56,25 +56,24 @@ export const getStaticProps = async (context) => {
 
 const Details = ({ post }) => {
   return (
-    <section className="">
-      <div>
+    <section className="max-w-4xl mx-auto p-8">
+      <div className="mb-6">
         <Image
           src={post.x_featured_media}
           alt={post.title.rendered}
-          width={100}
-          height={100}
-          className="h-[50vh] w-full mx-auto mr-2"
+          width={1200}
+          height={800}
+          className="rounded-lg shadow-md"
         />
       </div>
-      <div className="text-center font-bold text-5xl mt-4">
-        <h1>{post.title.rendered}</h1>
+      <div className="text-center">
+        <h1 className="text-4xl font-semibold">{post.title.rendered}</h1>
+        <p className="text-gray-600 text-sm mt-2">
+          By {post.author} | {new Date(post.date).toDateString()}
+        </p>
       </div>
-      <div className="flex justify-center space-x-40 mt-4">
-        <span>Author: {post.author}</span>
-        <span>{new Date(post.date).toDateString()}</span>
-      </div>
-      <div className="mt-10">
-        <div>{parse(post.content.rendered)}</div>
+      <div className="mt-6">
+        <div className="prose max-w-full">{parse(post.content.rendered)}</div>
       </div>
     </section>
   );
