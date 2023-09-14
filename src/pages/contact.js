@@ -30,7 +30,7 @@ export default function Contact() {
                 <svg
                   x="100%"
                   y={-1}
-                  className="overflow-visible fill-black"
+                  className="overflow-visible fill-gray-800/20"
                 >
                   <path d="M-470.5 0h201v201h-201Z" strokeWidth={0} />
                 </svg>
@@ -71,7 +71,7 @@ export default function Contact() {
                     aria-hidden="true"
                   />
                 </dt>
-                <dd>
+                <dd className="text-black">
                   545 Mavis Island
                   <br />
                   Chicago, IL 99191
@@ -86,7 +86,10 @@ export default function Contact() {
                   />
                 </dt>
                 <dd>
-                  <a className="hover:text-gray-400" href="tel:+1 (555) 234-5678">
+                  <a
+                    className="hover:text-gray-400 text-black"
+                    href="tel:+1 (555) 234-5678"
+                  >
                     +1 (555) 234-5678
                   </a>
                 </dd>
@@ -101,7 +104,7 @@ export default function Contact() {
                 </dt>
                 <dd>
                   <a
-                    className="hover:text-gray-400"
+                    className="hover:text-gray-400 text-black"
                     href="mailto:hello@example.com"
                   >
                     athena@example.com
