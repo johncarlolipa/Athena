@@ -14,7 +14,7 @@ export default function Home() {
         <title>Athena E-commerce</title>
       </Head>
 
-      <div>
+      <div className="">
         <Hero />
         <Category />
         <Trend />
