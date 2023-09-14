@@ -1,7 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
-
+import { useState, useEffect } from "react";
+import { getAllProductsFromServer } from "../../../lib/utils";
+import Featured from "./FeaturedProducts";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -10,6 +12,35 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 export default function Trend() {
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    let mounted = true;
+
+    const fetchData = async () => {
+      try {
+        const productsFromServer = await getAllProductsFromServer();
+        console.log(productsFromServer);
+
+        if (mounted) {
+          setProducts(productsFromServer);
+          setLoading(false);
+        }
+      } catch (error) {
+        if (mounted) {
+          setError(error);
+          setLoading(false);
+        }
+      }
+    };
+
+    fetchData();
+
+    return () => (mounted = false);
+  }, []);
+
   return (
     <section className="">
       <div className="mt-20">
@@ -33,135 +64,20 @@ export default function Trend() {
         onSlideChange={() => console.log("slide change")}
         speed={700}
       >
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-4 mt-10">
-          <div className="text-center mt-5">
-            <Image
-              src="/assets/item1.jpg"
-              alt=""
-              width={900}
-              height={0}
-              className="h-[60vh]"
-            />
-            <h1 className="text-black font-poppins text-lg font-semibold mt-2">
-              Make it Happen
-            </h1>
-            <span className="text-gray-600 font-poppins text-md font-semibold">
-              P599
-            </span>
-          </div>
-
-          <div className="text-center mt-5">
-            <Image
-              src="/assets/item1.jpg"
-              alt=""
-              width={900}
-              height={0}
-              className="h-[60vh]"
-            />
-            <h1 className="text-black font-poppins text-lg font-semibold mt-2">
-              Make it Happen
-            </h1>
-            <span className="text-gray-500 font-poppins text-md font-semibold">
-              P599
-            </span>
-          </div>
-
-          <div className="text-center mt-5">
-            <Image
-              src="/assets/item1.jpg"
-              alt=""
-              width={900}
-              height={0}
-              className="h-[60vh]"
-            />
-            <h1 className="text-black font-poppins text-lg font-semibold mt-2">
-              Make it Happen
-            </h1>
-            <span className="text-gray-500 font-poppins text-md font-semibold">
-              P599
-            </span>
-          </div>
-
-          <div className="text-center mt-5">
-            <Image
-              src="/assets/item1.jpg"
-              alt=""
-              width={900}
-              height={0}
-              className="h-[60vh]"
-            />
-            <h1 className="text-black font-poppins text-lg font-semibold mt-2">
-              Make it Happen
-            </h1>
-            <span className="text-gray-500 font-poppins text-md font-semibold">
-              P599
-            </span>
-          </div>
-
-          <div className="text-center mt-5">
-            <Image
-              src="/assets/item1.jpg"
-              alt=""
-              width={900}
-              height={0}
-              className="h-[60vh]"
-            />
-            <h1 className="text-black font-poppins text-lg font-semibold mt-2">
-              Make it Happen
-            </h1>
-            <span className="text-gray-500 font-poppins text-md font-semibold">
-              P599
-            </span>
-          </div>
-
-          <div className="text-center mt-5">
-            <Image
-              src="/assets/item1.jpg"
-              alt=""
-              width={900}
-              height={0}
-              className="h-[60vh]"
-            />
-            <h1 className="text-black font-poppins text-lg font-semibold mt-2">
-              Make it Happen
-            </h1>
-            <span className="text-gray-500 font-poppins text-md font-semibold">
-              P599
-            </span>
-          </div>
-
-          <div className="text-center mt-5">
-            <Image
-              src="/assets/item1.jpg"
-              alt=""
-              width={900}
-              height={0}
-              className="h-[60vh]"
-            />
-            <h1 className="text-black font-poppins text-lg font-semibold mt-2">
-              Make it Happen
-            </h1>
-            <span className="text-gray-500 font-poppins text-md font-semibold">
-              P599
-            </span>
-          </div>
-
-          <div className="text-center mt-5">
-            <Image
-              src="/assets/item1.jpg"
-              alt=""
-              width={900}
-              height={0}
-              className="h-[60vh]"
-            />
-            <h1 className="text-black font-poppins text-lg font-semibold mt-2">
-              Make it Happen
-            </h1>
-            <span className="text-gray-500 font-poppins text-md font-semibold">
-              P599
-            </span>
-          </div>
-
+        <div className="">
+          {loading ? (
+            <p>Loading...</p>
+          ) : error ? (
+            <p>Error: {error.message}</p>
+          ) : (
+            <div className="grid grid-cols-1  md:grid-cols-4 mt-10">
+              {products.map((product, id) => (
+                <div key={id} className="">
+                  <Featured product={product} />
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       </Swiper>
 
