@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import { useState, useEffect } from "react";
 import { getAllProductsFromServer } from "../../../lib/utils";
@@ -50,7 +49,7 @@ export default function Trend() {
         <br />
         <p className="text-gray-400 text-center font-poppins text-base font-normal leading-normal tracking-wider">
           Find a bright ideal to suit your taste with our great selection of
-          suspension, wall, floor and table lights.
+          trousers, bomber-jacket, cardigans and windbreakers.
         </p>
       </div>
 
@@ -73,7 +72,9 @@ export default function Trend() {
             <div className="grid grid-cols-1  md:grid-cols-4 mt-10">
               {products.map((product, id) => (
                 <div key={id} className="">
-                  <Featured product={product} />
+                  <SwiperSlide>
+                    <Featured product={product} />
+                  </SwiperSlide>
                 </div>
               ))}
             </div>
