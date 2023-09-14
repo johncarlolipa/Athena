@@ -30,7 +30,7 @@ export default function Contact() {
                 <svg
                   x="100%"
                   y={-1}
-                  className="overflow-visible fill-gray-800/20"
+                  className="overflow-visible fill-black"
                 >
                   <path d="M-470.5 0h201v201h-201Z" strokeWidth={0} />
                 </svg>
@@ -58,8 +58,8 @@ export default function Contact() {
               Get in touch
             </h2>
             <p className="mt-6 text-lg leading-8 text-black">
-              Do you have any queries about the products you want tp buy or have
-              been received? Just kingly send us a message and we will get back
+              Do you have any queries about the products you want to buy or have
+              been received? Just kindly send us a message and we will get back
               to you as soon as possible.
             </p>
             <dl className="mt-10 space-y-4 text-base leading-7 text-black">
@@ -67,7 +67,7 @@ export default function Contact() {
                 <dt className="flex-none">
                   <span className="sr-only">Telephone</span>
                   <BuildingOffice2Icon
-                    className="h-7 w-6 text-gray-400"
+                    className="h-7 w-6 text-black"
                     aria-hidden="true"
                   />
                 </dt>
@@ -81,7 +81,7 @@ export default function Contact() {
                 <dt className="flex-none">
                   <span className="sr-only">Telephone</span>
                   <PhoneIcon
-                    className="h-7 w-6 text-gray-400"
+                    className="h-7 w-6 text-black"
                     aria-hidden="true"
                   />
                 </dt>
@@ -95,7 +95,7 @@ export default function Contact() {
                 <dt className="flex-none">
                   <span className="sr-only">Telephone</span>
                   <EnvelopeIcon
-                    className="h-7 w-6 text-gray-400"
+                    className="h-7 w-6 text-black"
                     aria-hidden="true"
                   />
                 </dt>
