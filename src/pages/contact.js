@@ -1,17 +1,3 @@
-/*
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
 import {
   BuildingOffice2Icon,
   EnvelopeIcon,
@@ -20,7 +6,7 @@ import {
 
 export default function Contact() {
   return (
-    <div className="relative isolate bg-black">
+    <div className="relative isolate bg-white">
       <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
         <div className="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
           <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
@@ -68,15 +54,15 @@ export default function Contact() {
                 />
               </div>
             </div>
-            <h2 className="text-3xl font-bold tracking-tight text-white">
+            <h2 className="text-3xl font-bold tracking-tight text-black">
               Get in touch
             </h2>
-            <p className="mt-6 text-lg leading-8 text-gray-300">
+            <p className="mt-6 text-lg leading-8 text-black">
               Do you have any queries about the products you want tp buy or have
               been received? Just kingly send us a message and we will get back
               to you as soon as possible.
             </p>
-            <dl className="mt-10 space-y-4 text-base leading-7 text-gray-300">
+            <dl className="mt-10 space-y-4 text-base leading-7 text-black">
               <div className="flex gap-x-4">
                 <dt className="flex-none">
                   <span className="sr-only">Telephone</span>
@@ -100,7 +86,7 @@ export default function Contact() {
                   />
                 </dt>
                 <dd>
-                  <a className="hover:text-white" href="tel:+1 (555) 234-5678">
+                  <a className="hover:text-gray-400" href="tel:+1 (555) 234-5678">
                     +1 (555) 234-5678
                   </a>
                 </dd>
@@ -115,7 +101,7 @@ export default function Contact() {
                 </dt>
                 <dd>
                   <a
-                    className="hover:text-white"
+                    className="hover:text-gray-400"
                     href="mailto:hello@example.com"
                   >
                     athena@example.com
@@ -152,7 +138,7 @@ export default function Contact() {
               <div>
                 <label
                   htmlFor="last-name"
-                  className="block text-sm font-semibold leading-6 text-white"
+                  className="block text-sm font-semibold leading-6 text-black"
                 >
                   Last name
                 </label>
@@ -162,14 +148,14 @@ export default function Contact() {
                     name="last-name"
                     id="last-name"
                     autoComplete="family-name"
-                    className="block w-full rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6"
+                    className="block w-full rounded-md border-0 bg-white/5 px-3.5 py-2 text-black shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
               <div className="sm:col-span-2">
                 <label
                   htmlFor="email"
-                  className="block text-sm font-semibold leading-6 text-white"
+                  className="block text-sm font-semibold leading-6 text-black"
                 >
                   Email
                 </label>
@@ -179,14 +165,14 @@ export default function Contact() {
                     name="email"
                     id="email"
                     autoComplete="email"
-                    className="block w-full rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6"
+                    className="block w-full rounded-md border-0 bg-white/5 px-3.5 py-2 text-black shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
               <div className="sm:col-span-2">
                 <label
                   htmlFor="phone-number"
-                  className="block text-sm font-semibold leading-6 text-white"
+                  className="block text-sm font-semibold leading-6 text-black"
                 >
                   Phone number
                 </label>
@@ -196,14 +182,14 @@ export default function Contact() {
                     name="phone-number"
                     id="phone-number"
                     autoComplete="tel"
-                    className="block w-full rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6"
+                    className="block w-full rounded-md border-0 bg-white/5 px-3.5 py-2 text-black shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
               <div className="sm:col-span-2">
                 <label
                   htmlFor="message"
-                  className="block text-sm font-semibold leading-6 text-white"
+                  className="block text-sm font-semibold leading-6 text-black"
                 >
                   Message
                 </label>
@@ -212,7 +198,7 @@ export default function Contact() {
                     name="message"
                     id="message"
                     rows={4}
-                    className="block w-full rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6"
+                    className="block w-full rounded-md border-0 bg-white/5 px-3.5 py-2 text-black shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6"
                     defaultValue={""}
                   />
                 </div>
@@ -221,7 +207,7 @@ export default function Contact() {
             <div className="mt-8 flex justify-end">
               <button
                 type="submit"
-                className="rounded-md bg-white px-3.5 py-2.5 text-center text-sm font-semibold text-black shadow-sm hover:bg-gray-700 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                className="rounded-md bg-black px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-gray-700 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
               >
                 Send message
               </button>
