@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Quote() {
   return (
-    <section className="bg-gray-400 mt-10">
+    <section className="bg-gray-300 mt-10">
       <div className="p-32 flex flex-col items-center md:flex-row justify-center text-center md:text-left">
         <p className="text-black font-poppins text-3xl md:text-sl lg:text-2xl font-medium leading-normal">
           Very good Design, Flexible, Fast Support.
