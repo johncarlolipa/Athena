@@ -10,7 +10,7 @@ export default function Featured({ product }) {
             src={product.x_featured_media}
             alt=""
             width={900}
-            height={600} // Set an appropriate height for the image
+            height={600} 
             className="h-[50vh]"
           />
           <div className="text-center mt-5">

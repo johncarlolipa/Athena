@@ -72,9 +72,7 @@ export default function Trend() {
             <div className="grid grid-cols-1  md:grid-cols-4 mt-10">
               {products.map((product, id) => (
                 <div key={id} className="">
-                  <SwiperSlide>
-                    <Featured product={product} />
-                  </SwiperSlide>
+                  <Featured product={product} />
                 </div>
               ))}
             </div>
