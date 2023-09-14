@@ -62,14 +62,14 @@ const Details = ({ post }) => {
           src={post.x_featured_media}
           alt={post.title.rendered}
           width={1200}
-          height={800}
+          height={500}
           className="rounded-lg shadow-md"
         />
       </div>
       <div className="text-center">
         <h1 className="text-4xl font-semibold">{post.title.rendered}</h1>
         <p className="text-gray-600 text-sm mt-2">
-          By {post.author} | {new Date(post.date).toDateString()}
+          Author: {post.author} | {new Date(post.date).toDateString()}
         </p>
       </div>
       <div className="mt-6">
