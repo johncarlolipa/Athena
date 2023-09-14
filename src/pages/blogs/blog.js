@@ -1,6 +1,5 @@
 import React from "react";
 import BlogHero from "@/components/blog/BlogHero";
-import BlogList from "@/components/blog/BlogList";
 import BlogNewsletter from "@/components/blog/BlogNewsletter";
 import Link from "next/link";
 import BlogPost from "@/components/blog/BlogPost";

@@ -11,10 +11,10 @@ export default function BlogList({ post }) {
           <Image
             src={post.x_featured_media}
             alt={post.title.rendered}
-            width={400}
-            height={300} // Set a proper height for the image
+            width={600}
+            height={400}
             quality={100}
-            className="h-[50vh]"
+            className="h-[40vh] w-full"
           />
         </div>
         <div className="mt-5">
