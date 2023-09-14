@@ -3,6 +3,7 @@ import {
   EnvelopeIcon,
   PhoneIcon,
 } from "@heroicons/react/24/outline";
+import Link from "next/link";
 
 export default function Contact() {
   return (
@@ -208,13 +209,14 @@ export default function Contact() {
               </div>
             </div>
             <div className="mt-8 flex justify-end">
-              <button
-                type="submit"
-                src="#"
-                className="rounded-md bg-black px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-gray-900 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
-              >
-                Send message
-              </button>
+              <Link href="#">
+                <button
+                  type="submit"
+                  className="rounded-md bg-black px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-gray-900 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                >
+                  Send message
+                </button>
+              </Link>
             </div>
           </div>
         </form>
