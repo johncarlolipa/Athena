@@ -80,7 +80,7 @@ export default function Trend() {
         </div>
       </Swiper>
 
-      <div className="text-center my-20 text-black font-poppins text-base font-semibold leading-normal">
+      <div className="text-center mt-10 mb-20 text-black font-poppins text-base font-semibold leading-normal">
         <button type="submit" name="" id="">
           + See All Products
         </button>
