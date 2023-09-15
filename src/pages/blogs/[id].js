@@ -55,6 +55,17 @@ export const getStaticProps = async (context) => {
 };
 
 const Details = ({ post }) => {
+  const addSpacesBeforeH4AndParagraphs = (content) => {
+    content = content.replace(/<h4/g, "<p>&nbsp;</p><h4");
+    content = content.replace(/<p>/g, "<p>&nbsp;</p>");
+
+    return content;
+  };
+
+  const formattedContent = addSpacesBeforeH4AndParagraphs(
+    post.content.rendered
+  );
+
   return (
     <section className="max-w-4xl mx-auto p-8">
       <div className="mb-6">
@@ -62,7 +73,7 @@ const Details = ({ post }) => {
           src={post.x_featured_media}
           alt={post.title.rendered}
           width={1200}
-          height={300}
+          height={1200}
           className="rounded-lg shadow-md"
         />
       </div>
@@ -73,7 +84,7 @@ const Details = ({ post }) => {
         </p>
       </div>
       <div className="mt-6">
-        <div className="prose max-w-full">{parse(post.content.rendered)}</div>
+        <div className="prose max-w-full">{parse(formattedContent)}</div>
       </div>
     </section>
   );
