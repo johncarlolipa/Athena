@@ -62,7 +62,7 @@ const Details = ({ post }) => {
           src={post.x_featured_media}
           alt={post.title.rendered}
           width={1200}
-          height={500}
+          height={300}
           className="rounded-lg shadow-md"
         />
       </div>
