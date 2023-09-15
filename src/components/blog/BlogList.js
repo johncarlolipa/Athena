@@ -25,7 +25,7 @@ export default function BlogList({ post }) {
               {post.title.rendered}
             </Link>
           </div>
-          <div className="text-black font-poppins text-md font-medium leading-normal tracking-tight mt-3">
+          <div className="text-black font-poppins text-sm font-medium leading-normal tracking-tight mt-3 text-center">
             <h4>{new Date(post.date).toDateString()}</h4>
           </div>
         </div>
