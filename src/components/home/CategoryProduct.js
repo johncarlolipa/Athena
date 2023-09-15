@@ -15,7 +15,7 @@ export default function Category() {
             alt=""
             width={700}
             height={0}
-            className="h-[70vh] border shadow-lg"
+            className="h-[70vh] border shadow-lg cursor-pointer"
           />
         </div>
 
@@ -29,7 +29,7 @@ export default function Category() {
             alt=""
             width={900}
             height={0}
-            className="h-[70vh]  border shadow-lg"
+            className="h-[70vh]  border shadow-lg cursor-pointer"
           />
         </div>
         <div className="p-4 relative">
@@ -42,7 +42,7 @@ export default function Category() {
             alt=""
             width={700}
             height={0}
-            className="h-[70vh] border shadow-lg"
+            className="h-[70vh] border shadow-lg cursor-pointer"
           />
         </div>
       </div>
