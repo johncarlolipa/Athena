@@ -13,7 +13,7 @@ export default function Featured({ product }) {
             height={600} 
             className="h-[50vh]"
           />
-          <div className="text-center mt-5">
+          <div className="text-center mt-5 cursor-pointer">
             <h1 className="text-black font-poppins text-lg font-semibold">
               {product.title.rendered}
             </h1>
