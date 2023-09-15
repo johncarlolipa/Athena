@@ -45,10 +45,10 @@ export default function Product() {
           <span className="text-black font-poppins text-base font-normal leading-normal">
             New Product
           </span>
-          <span className="text-gray-600 font-poppins text-base font-normal leading-normal">
+          <span className="text-gray-600 hover:text-black font-poppins text-base font-normal leading-normal cursor-pointer">
             Best Seller
           </span>
-          <span className="text-gray-600 font-poppins text-base font-normal leading-normal">
+          <span className="text-gray-600 hover:text-black font-poppins text-base font-normal leading-normal">
             Sale Products
           </span>
         </div>
