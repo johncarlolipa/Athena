@@ -86,9 +86,19 @@ const Details = ({ post }) => {
       <div className="mt-6">
         <div className="prose max-w-full">{parse(formattedContent)}</div>
       </div>
-      <div>
-        <h1 className="font-bold text-2xl">Tell us your opinion</h1>
-        <textarea rows="6" cols="">Write your comment here...</textarea>
+      <div className="mt-10">
+        <h1 className="font-bold text-2xl mb-2">Tell us your opinion</h1>
+        <textarea rows="10" cols="" className="border border-black w-full p-2">
+          Write your comment here...
+        </textarea>
+        <div className=" flex justify-center">
+          <button
+            type=""
+            className="bg-black text-white hover:bg-gray-900 py-2 px-6 text-center"
+          >
+            Send
+          </button>
+        </div>
       </div>
     </section>
   );
