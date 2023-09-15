@@ -5,7 +5,7 @@ export default function Category() {
   return (
     <section>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-3 mt-10 z-10">
-        <div className="p-4 relative">
+        <div className="p-4 relative border shadow-lg">
           <h1 className="absolute top-8 left-10 z-10 text-4xl font-bold">
             Men
           </h1>
@@ -19,7 +19,7 @@ export default function Category() {
           />
         </div>
 
-        <div className="p-4 relative">
+        <div className="p-4 relative border shadow-lg">
           <h1 className="absolute top-8 left-10 z-10 text-4xl font-bold">
             Women
           </h1>
@@ -32,7 +32,7 @@ export default function Category() {
             className="h-[70vh]"
           />
         </div>
-        <div className="p-4 relative">
+        <div className="p-4 relative border shadow-lg">
           <h1 className="absolute top-8 left-10 z-10 text-4xl font-bold">
             Kids
           </h1>
