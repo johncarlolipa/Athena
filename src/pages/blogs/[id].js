@@ -88,15 +88,18 @@ const Details = ({ post }) => {
       </div>
       <div className="mt-20 text-center">
         <h1 className="font-bold text-2xl mb-2">Tell us your opinion</h1>
-        <textarea rows="10" cols="" className="border border-black w-full p-2">
-          Write your comment here...
-        </textarea>
+        <textarea
+          rows="10"
+          cols=""
+          className="border border-black w-full p-2"
+          placeholder="Write your comment here..."
+        ></textarea>
         <div className=" flex justify-center">
           <button
-            type=""
+            type="text"
             className="bg-black text-white hover:bg-gray-900 py-2 px-6 text-center"
           >
-            Send
+            Submit
           </button>
         </div>
       </div>
