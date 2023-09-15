@@ -86,6 +86,10 @@ const Details = ({ post }) => {
       <div className="mt-6">
         <div className="prose max-w-full">{parse(formattedContent)}</div>
       </div>
+      <div>
+        <h1 className="font-bold text-2xl">Tell us your opinion</h1>
+        <textarea rows="6" cols="">Write your comment here...</textarea>
+      </div>
     </section>
   );
 };
