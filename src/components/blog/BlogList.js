@@ -8,14 +8,16 @@ export default function BlogList({ post }) {
     <div className="">
       <div className="p-4">
         <div>
-          <Image
-            src={post.x_featured_media}
-            alt={post.title.rendered}
-            width={600}
-            height={400}
-            quality={100}
-            className="h-[40vh] w-full"
-          />
+          <Link href={`/blogs/${post.id}`} key={post.id}>
+            <Image
+              src={post.x_featured_media}
+              alt={post.title.rendered}
+              width={600}
+              height={400}
+              quality={100}
+              className="h-[40vh] w-full"
+            />
+          </Link>
         </div>
         <div className="mt-5">
           <div className="text-center font-Poppins text-black text-xl font-medium">
