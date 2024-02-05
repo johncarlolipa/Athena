@@ -68,13 +68,13 @@ const Details = ({ post }) => {
 
   return (
     <section className="max-w-4xl mx-auto p-8">
-      <div className="mb-6">
+      <div className="mb-6 flex justify-center">
         <Image
           src={post.x_featured_media}
           alt={post.title.rendered}
-          width={1200}
-          height={1200}
-          className="rounded-lg shadow-md"
+          width={250}
+          height={100}
+          className="rounded-lg shadow-md w-[300px] h-[300px]"
         />
       </div>
       <div className="text-center">

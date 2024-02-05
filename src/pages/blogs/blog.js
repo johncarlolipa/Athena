@@ -1,7 +1,6 @@
 import React from "react";
 import BlogHero from "@/components/blog/BlogHero";
 import BlogNewsletter from "@/components/blog/BlogNewsletter";
-import Link from "next/link";
 import BlogPost from "@/components/blog/BlogPost";
 
 export const getStaticProps = async () => {

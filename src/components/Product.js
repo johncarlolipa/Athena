@@ -54,20 +54,23 @@ export default function Product() {
         </div>
       </div>
       <div className="">
-        {loading ? (
-          <p>Loading...</p>
-        ) : error ? (
-          <p>Error: {error.message}</p>
-        ) : (
-          <div className="grid grid-cols-1  md:grid-cols-4 mt-10">
-            {products.map((product, id) => (
-              <div key={id} className="">
-                <Featured product={product} />
-              </div>
-            ))}
-          </div>
-        )}
-      </div>
+      {loading ? (
+
+        <div className="loading-spinner">
+          <div className="spinner"></div>
+        </div>
+      ) : error ? (
+        <p>Error: {error.message}</p>
+      ) : (
+        <div className="grid grid-cols-1 md:grid-cols-4 mt-10">
+          {products.map((product, id) => (
+            <div key={id} className="">
+              <Featured product={product} />
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
     </div>
   );
 }
